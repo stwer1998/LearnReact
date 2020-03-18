@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Google from './Google'
+import Google from './Google';
+import Yandex from './Yandex';
+
 
 let App = () => {
 
-  return (
-    <div>
-    
+  return (    
     <div className="App">
       Hello World
-    </div>
     <Google />
+    <Yandex />
     </div>
   );
 }
