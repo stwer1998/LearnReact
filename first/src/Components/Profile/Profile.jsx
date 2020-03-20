@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import css from './Profile.module.css';
+
 
 let Profile = () => {
   return (
-    <div className='content'>
+    <div className={css.content}>
       <div>
         <img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' />
       </div>
