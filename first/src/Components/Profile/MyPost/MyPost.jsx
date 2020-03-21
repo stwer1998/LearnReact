@@ -11,7 +11,10 @@ let Profile = () => {
           <button>Add Post</button>
       </div>
         <div>
-         <Post/>
+         <Post message="message 1"/>
+         <Post message="message 2"/>
+         <Post message="message 3"/>
+
          <Post/>
 
         </div>

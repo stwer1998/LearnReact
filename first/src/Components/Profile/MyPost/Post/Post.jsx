@@ -3,12 +3,12 @@ import css from './Post.module.css';
 import logo from '../../../Header/logo.svg'
 
 
-let Post = () => {
+let Post = (props) => {
     return (
 
         <div className={css.item}>
             <img src={logo} />
-            post 1
+            {props.message}
         </div>
     );
 }
