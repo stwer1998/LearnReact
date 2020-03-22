@@ -8,6 +8,7 @@
 }
 
 .dialogsItem .dialog{
+    text-decoration: none;
 
 }
 .dialogsItem .active{
