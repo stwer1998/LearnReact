@@ -1,3 +1,22 @@
-.content{
-    background-color: aqua;
+.dialogs{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 2fr 10fr ;
+}
+.dialogsItem{
+    padding: 10px;
+}
+
+.dialogsItem .dialog{
+
+}
+.dialogsItem .active{
+    color: red;
+}
+
+.messages{
+    padding: 10px;
+}
+.messeges .message{
+
 }
