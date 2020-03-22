@@ -2,6 +2,8 @@ import React from 'react';
 import css from './MyPost.module.css';
 import Post from './Post/Post'
 
+let arrayPost=[{message:"message"},{message:"message2"},{message:"message3"},{message:"message4"},{message:"message5"}]
+
 let Profile = () => {
   return (
      <div>
@@ -11,10 +13,9 @@ let Profile = () => {
           <button>Add Post</button>
       </div>
         <div>
-         <Post message="message 5"/>
-         <Post message="message 2"/>
-         <Post message="message 3"/>
-
+            {
+                arrayPost.map(item=><Post message={item.message}/>)
+            }
          <Post/>
 
         </div>

@@ -2,6 +2,16 @@ import React from "react";
 import css from "./Dialogs.module.css"
 import {NavLink} from "react-router-dom";
 
+var arrayDialogs=[
+    {id:1, name:"Dialog 1"},{id:2, name:"Dialog 2"},
+    {id:3, name:"Dialog 3"},{id:4, name:"Dialog 4"},
+    {id:5, name:"Dialog 5"},{id:6, name:"Dialog 6"}
+]
+var arrayMessage=[
+    {message:"Hi"},{message:"Hello"},{message:"howdy"}
+]
+
+
 let DialogsItem=(props)=>
 {
     return(
@@ -12,23 +22,22 @@ let DialogsItem=(props)=>
     );
 }
 
+let Message=(props)=>{
+    return  <div className={css.message}>{props.message}</div>
+}
+
 let Dialogs = () => {
     return (
         <div className={css.dialogs}>
             <div className={css.dialogsItem}>
-                <DialogsItem name={"First 1"} id={"1"}/>
-                <DialogsItem name={"First 2"} id={"2"}/>
-                <DialogsItem name={"First 3"} id={"3"}/>
-                <DialogsItem name={"First 4"} id={"4"}/>
-                <DialogsItem name={"First 5"} id={"5"}/>
-
-
+                {
+                    arrayDialogs.map(item=><DialogsItem name={item.name} id={item.id}/>)
+                }
             </div>
             <div className={css.messages}>
-                <div className={css.message}>Hi</div>
-                <div className={css.message}>Hi yoyo</div>
-                <div className={css.message}>Hi konishua</div>
-
+                {
+                    arrayMessage.map(item=><Message message={item.message}/>)
+                }
             </div>
         </div>
     );
